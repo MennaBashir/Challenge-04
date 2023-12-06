@@ -1,0 +1,181 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  .container{
+    padding: 20px;
+    background-image: url(../images/bac.png);
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container main{
+    display: flex;
+
+  }
+  .container section{
+    background-color: #1e2c69;
+    color: white;
+    width: 180px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 6px 60px 6px 6px;
+  }
+  .container section .sm1{
+    margin-bottom: 10px;
+  }
+  .container section .sm1 i{
+    font-size: 19px;
+}
+.container section .sm1 span{
+      
+    font-size: 25px;
+}
+.container section .sm2 span{
+    width: 28px;
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #0b102d;
+    border-radius: 4px;
+}
+.container section .sm2 span img{
+    width: 20px;
+    padding: 2px;
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+}
+.container aside{
+    background-color: #1e2c69;
+    border-radius: 6px;
+    padding: 20px;
+}
+.container aside .pp{
+    display: flex;
+    justify-content: space-between;
+}
+.container aside .pp p{
+    color: #bcc1db;
+    font-size: 11px;
+    margin-right: 30px;
+}
+.container aside .pp p span{
+    color: white;
+
+}
+.container aside .pp .a::before{
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-color: white white transparent transparent;
+    right: 0px;
+    bottom: -16px;
+}
+.container aside .pp .a{
+    background-color: white;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px 6px 0;
+    position: relative;
+    right: 4px;
+    top: -42px;
+    font-weight: bold;
+    padding: 20px 12px;
+    font-size: 26px;
+    color: #0e1b44eb;
+    font-style: normal;
+}
+.container aside .pp .a .b {
+    color: #abacb0;
+    font-size: 11px;
+    font-weight: 600;
+    position: relative;
+    right: -8px;
+}
+
+.container aside .ratio{
+    height: 13px;
+    border-radius: 6px;
+    background-color: #151d49;
+    position: relative;
+    border: 2px solid #151d49;
+    margin-top: -10px;
+    margin-bottom: 2px;
+}
+.container aside .ratio span::before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    background-color: white;
+    z-index: 1;
+    border-radius: 50%;
+    
+}
+.container aside .ratio span{
+    border-radius: 4px;
+    background-image: linear-gradient(to right,#ff9996 20%,#ff8b97 50%,#fe7894 70%,#fc5492 100%);
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.container aside .pp2 p{
+    display: flex;
+    justify-content: space-between;
+    color: #bcc1db;
+    font-size: 10px;
+}
+@media(max-width:500px){
+    .container main {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .container section {
+        width: 220px;
+        margin-right: 0; 
+        margin-bottom: 10px;
+        transform: translateX(-50%);
+        left: 50%;
+        position: relative;
+    }
+        .container aside {
+            padding: 12px 12px 30px;
+            width: 240px;
+            position: relative;
+        }
+        .container aside .pp {
+            display: block;
+        }
+        .container aside .pp .a {
+            right: -46px;
+            width: fit-content;
+            border-radius: 4px;
+            top: 45px;
+        }
+        .container aside .ratio {
+            margin-top: -30px;
+            margin-bottom: 5px;
+        }
+        .container aside .pp .a::before{
+            display:none;
+        }
+
+}
